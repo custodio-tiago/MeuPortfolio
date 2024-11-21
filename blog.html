@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Tiago Custódio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <a class="navbar-brand" href="index.html">Tiago Custódio</a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Meus Posts</h2>
+
+        <div class="position-relative mb-3">
+            <input type="text" id="categoryFilterBlog" placeholder="Filtrar por categoria" class="form-control">
+            <div id="blogSuggestions" class="suggestions-popup list-group mt-1"></div>
+        </div>
+
+        <div class="post" data-category="backend">
+            <h4><a href="postagem1.html">Comparativo entre Django, Spring e Node</a></h4>
+            <p>Exploração das vantagens e desvantagens dessas tecnologias.</p>
+            <p><a href="postagem1.html">Leia Mais</a> | <strong>Categoria:</strong> Backend</p>
+        </div>
+
+        <div class="post" data-category="mensageria">
+            <h4><a href="postagem2.html">Introdução ao RabbitMQ</a></h4>
+            <p>Entenda o funcionamento do RabbitMQ em sistemas distribuídos.</p>
+            <p><a href="postagem2.html">Leia Mais</a> | <strong>Categoria:</strong> Mensageria</p>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn" class="btn btn-primary">Subir</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

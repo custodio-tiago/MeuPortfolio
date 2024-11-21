@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tiago Custódio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .language-banner {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            color: black;
+            margin-left: 5px;
+        }
+        .javascript-banner {
+            background-color: yellow;
+        }
+        .java-banner {
+            background-color: darkorange;
+        }
+        .csharp-banner {
+            background-color: darkgreen;
+        }
+        .python-banner {
+            background-color: rgb(22, 31, 163);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <a class="navbar-brand" href="index.html">Tiago Custódio</a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Meus Projetos</h2>
+
+        <div class="position-relative mb-3">
+            <input type="text" id="categoryFilterPortfolio" placeholder="Filtrar por categoria" class="form-control">
+            <div id="portfolioSuggestions" class="suggestions-popup list-group mt-1"></div>
+        </div>
+
+        <div class="project" data-category="web app">
+            <a href="https://github.com/custodio-tiago/NodeJSApp" target="_blank">
+                <img src="nodeapp.png" alt="Node App" class="img-thumbnail float-left mr-3">
+            </a>
+            <h4>Node App <span class="language-banner javascript-banner">Javascript</span></h4>
+            <p>Exemplo de aplicação com Javascript no backend (Node.js). Originalmente usando MongoDB, fiz transição para Postgres, para mudar a hospedagem do Azure para Render. Frontend com HTML, CSS e Javascript. Criado como projeto pessoal com o intuito primeiramente de treinar MongoDB e hospedagem na Azure, e agora Posgres com Render.</p>
+            <p><strong>Categoria:</strong> Web App</p>
+        </div>
+
+        <div class="project" data-category="web app">
+            <a href="https://github.com/custodio-tiago/SpringApp" target="_blank">
+                <img src="springapp.png" alt="Spring App" class="img-thumbnail float-left mr-3">
+            </a>
+            <h4>Spring App <span class="language-banner java-banner">Java</span></h4>
+            <p>Exemplo de aplicação com Spring no backend, usando MySQL. No front foi usado HTML, CSS e Javascript. Consome uma API de CEPs. Criado para a Academia CX da NTT Data foi um exercício importante de prática de Java e mostra a robustez do Spring em vários níveis.</p>
+            <p><strong>Categoria:</strong> Web App</p>
+        </div>
+
+        <div class="project" data-category="web app">
+            <a href="https://github.com/custodio-tiago/MySeriesMyMovies" target="_blank">
+                <img src="myseriesmymovies.png" alt="MySeriesMyMovies" class="img-thumbnail float-left mr-3">
+            </a>
+            <h4>MySeriesMyMovies <span class="language-banner python-banner">Python</span></h4>
+            <p>Aplicação Django para avaliação de filmes e séries. Usa a API do The Movie Database, templates Django, sistema de login, logout e SQLite.</p>
+            <p><strong>Categoria:</strong> Web App</p>
+        </div>
+
+        <div class="project" data-category="game">
+            <a href="https://github.com/custodio-tiago/TLC-CIV" target="_blank">
+                <img src="tlc_civ.png" alt="TLC CIV" class="img-thumbnail float-left mr-3">
+            </a>
+            <h4>TLC CIV <span class="language-banner csharp-banner">C#</span></h4>
+            <p>Jogo estilo Civilization com C# e Windows Forms. Permite fundar cidades, criar workers, settlers, warriors, movimentar unidades no mapa e pesquisar tecnologias. Mostra como é possível usar a orientação à objetos em C# de modo robusto e eficaz com windows forms para a criação de um game com complexidade.</p>
+            <p><strong>Categoria:</strong> Game</p>
+        </div>
+
+        <div class="project" data-category="game">
+            <a href="https://github.com/custodio-tiago/ShipWar2" target="_blank">
+                <img src="shipwar2.png" alt="Ship War 2" class="img-thumbnail float-left mr-3">
+            </a>
+            <h4>Ship War 2 <span class="language-banner python-banner">Python</span></h4>
+            <p>Continuação do jogo de naves, mas agora com Python (pygame). Uma versão um pouco mais elaborada com inimigos com comportamentos diferentes e uma demonstração de como usar programação orientada à objetos com Python. </p>
+            <p><strong>Categoria:</strong> Game</p>
+        </div>
+
+        <div class="project" data-category="game">
+            <a href="https://github.com/custodio-tiago/ShipWar1" target="_blank">
+                <img src="shipwar.png" alt="Ship War" class="img-thumbnail float-left mr-3">
+            </a>
+            <h4>Ship War <span class="language-banner javascript-banner">Javascript</span></h4>
+            <p>Jogo de naves com HTML, CSS e Javascript, com elementos de física clássica de um jogo estilo Asteroid. Mostra como é possível integrar essas tecnologias para criar um game em 2D com todos os elementos de física envolvidos.</p>
+            <p><strong>Categoria:</strong> Game</p>
+        </div>
+
+        <div class="project" data-category="game">
+            <a href=https://github.com/custodio-tiago/CoelhoRapido target="_blank">
+                <img src="" alt="Coelho Rapido" class="img-thumbnail float-left mr-3">
+            </a>
+            <h4>Coelho Rápido <span class="language-banner csharp-banner">C#</span></h4>
+            <p>Jogo de plataforma 2D com Unity, onde você controla Rápido, um coelho que é rápido e pula pelas plataformas combatendo invasores que estão querendo tomar as terras de seu povo. Permite correr, pular pelas plataformas e combater os inimigos com saltos e à longa distância.</p>
+            <p><strong>Categoria:</strong> Game</p>
+        </div>
+
+        <div class="project" data-category="web app">
+            <a href=https://github.com/custodio-tiago/PizzariaAPI target="_blank">
+                <img src="pizzaria_api.png" alt="Pizzaria API" class="img-thumbnail float-left mr-3">
+            </a>
+            <h4>Pizzaria API <span class="language-banner csharp-banner">C#</span></h4>
+            <p>Uma aplicação REST API simples desenvolvida com ASP.NET Core que utiliza PostgreSQL como banco de dados. Esta API gerencia informações de usuários e pizzas, proporcionando um exemplo funcional de como estruturar um backend com serviços, controladores e modelos.</p>
+            <p><strong>Categoria:</strong> Web App</p>
+        </div>
+
+        <div class="project" data-category="web app">
+            <a href="https://litraosearcher.netlify.app" target="_blank">
+                <img src="litraosearcher.png" alt="Ship War" class="img-thumbnail float-left mr-3">
+            </a>
+            <h4>Litrão Searcher <span class="language-banner javascript-banner">Javascript</span></h4>
+            <p>Busca e marcação de bares em um mapa, compartilhando entre os usuários. Usa Leaflet e Open Street Map. Logue com admin / admin para conhecer a aplicação. Mostra como fazer um login simples em Javascript e criar uma aplicação que, além de permitir marcação de pop ups no mapa, permite criar conteúdo que seja compartilhável entre usuários diferentes.</p>
+            <p><strong>Categoria:</strong> Web App</p>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn" class="btn btn-primary">Subir</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

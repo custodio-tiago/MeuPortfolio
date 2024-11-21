@@ -1,0 +1,94 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+.navbar {
+    border-bottom: 2px solid #dee2e6;   
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+/* Estilos para postagens */
+.post, .project {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Permite o uso de flexbox para melhor alinhamento */
+    flex-direction: column; /* Alinha os itens na coluna */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+}
+
+/* Ajustes nas imagens das postagens */
+.post-image img, .project img {
+    max-width: 150px; /* Limita a largura máxima da imagem a 150px */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.project img {
+    max-width: 300px; /* Limita a largura máxima da imagem a 300px */
+    margin-right: 15px; /* Espaçamento à direita da imagem */
+    float: left; /* Alinha a imagem à esquerda */
+    margin-bottom: 40px;
+}
+
+.post-content {
+    flex: 1; /* Permite que o conteúdo ocupe o restante do espaço */
+}
+
+/* Texto sempre em preto */
+.post-content p, .post-content h4, .post-content a {
+    color: black; /* Garante que o texto fique sempre em preto */
+}
+
+/* Ajustes para título e descrição */
+.post-content h4 {
+    margin-bottom: 5px; /* Espaçamento abaixo do título */
+    margin-top: 0; /* Remove o espaço acima do título */
+}
+
+.post-content p {
+    margin-bottom: 10px; /* Espaçamento abaixo da descrição */
+}
+
+/* Estilo do botão "Leia mais" */
+.post-content a {
+    display: inline-block; /* Permite o ajuste de margem */
+}
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.suggestions-popup {
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: none;
+}
