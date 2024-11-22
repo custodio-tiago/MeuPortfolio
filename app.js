@@ -43,7 +43,7 @@ $(document).ready(function() {
     }
 
     filterProjects('#categoryFilterPortfolio', '#portfolioSuggestions', '.project', [
-        'Web App', 'Game'
+        'Web App', 'Game', 'Bot'
     ]);
 
     filterProjects('#categoryFilterBlog', '#blogSuggestions', '.post', [
